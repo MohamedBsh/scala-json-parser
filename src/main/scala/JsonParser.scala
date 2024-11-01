@@ -52,7 +52,7 @@ object JsonParser {
                 source.close()
             }
         } match {
-            case Success(content) => content // Return the content if successful
+            case Success(content) => content
             case Failure(exception) =>
                 println(s"Error reading file $filePath: ${exception.getMessage}")
                 ""
